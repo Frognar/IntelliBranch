@@ -1,7 +1,7 @@
 {
     "name": "IntelliBranch",
     "rootNamespace": "Frognar",
-    "references": [],
+    "references": ["GUID:67cd6aa4897447b7984933e570463873"],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
