@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Frognar.IntelliBranch {
+namespace Frognar.IntelliBranch.Nodes {
   public class RandomNode : Node {
     readonly List<Node> nodes;
     readonly Random random;

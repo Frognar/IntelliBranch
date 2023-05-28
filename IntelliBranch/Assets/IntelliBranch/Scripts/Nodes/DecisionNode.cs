@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Frognar.IntelliBranch {
+namespace Frognar.IntelliBranch.Nodes {
   public class DecisionNode : Node {
     readonly Func<bool> decision;
     readonly Node trueNode;

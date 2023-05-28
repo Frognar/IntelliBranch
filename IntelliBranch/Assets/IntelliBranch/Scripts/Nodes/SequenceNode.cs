@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Frognar.IntelliBranch {
+namespace Frognar.IntelliBranch.Nodes {
   public class SequenceNode : Node {
     readonly IEnumerable<Node> nodes;
 
