@@ -7,6 +7,10 @@ namespace Frognar.IntelliBranch.Nodes {
     public ActionNode(Blackboard blackboard, Func<bool> action) : base(blackboard) {
       this.action = action;
     }
+    
+    public ActionNode(Func<bool> action) {
+      this.action = action;
+    }
 
     public override bool Execute() {
       return action();

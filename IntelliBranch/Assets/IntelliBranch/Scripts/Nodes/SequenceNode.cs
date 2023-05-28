@@ -8,6 +8,10 @@ namespace Frognar.IntelliBranch.Nodes {
     public SequenceNode(Blackboard blackboard, IEnumerable<Node> nodes) : base(blackboard) {
       this.nodes = nodes;
     }
+    
+    public SequenceNode(IEnumerable<Node> nodes) {
+      this.nodes = nodes;
+    }
 
     public override bool Execute() {
       return nodes.All(node => node.Execute());

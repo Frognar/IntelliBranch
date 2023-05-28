@@ -11,6 +11,11 @@ namespace Frognar.IntelliBranch.Nodes {
       this.nodes = nodes.ToList();
       random = new Random();
     }
+    
+    public RandomNode(IEnumerable<Node> nodes) {
+      this.nodes = nodes.ToList();
+      random = new Random();
+    }
 
     public override bool Execute() {
       return nodes[random.Next(nodes.Count)].Execute();

@@ -11,6 +11,12 @@ namespace Frognar.IntelliBranch.Nodes {
       this.trueNode = trueNode;
       this.falseNode = falseNode;
     }
+    
+    public DecisionNode(Func<bool> decision, Node trueNode, Node falseNode) {
+      this.decision = decision;
+      this.trueNode = trueNode;
+      this.falseNode = falseNode;
+    }
 
     public override bool Execute() {
       return decision()
