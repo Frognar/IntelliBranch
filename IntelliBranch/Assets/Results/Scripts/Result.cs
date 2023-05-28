@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Frognar.Results.Scripts {
+namespace Frognar.Results {
   public readonly struct Result<T> {
     readonly T value;
     readonly Exception error;

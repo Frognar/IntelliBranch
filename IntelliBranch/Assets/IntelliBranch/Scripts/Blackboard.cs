@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Frognar.Results.Scripts;
+using Frognar.Results;
 
 namespace Frognar.IntelliBranch {
   public class Blackboard {
