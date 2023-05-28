@@ -6,7 +6,7 @@ namespace Frognar.IntelliBranch.Nodes {
     readonly Node trueNode;
     readonly Node falseNode;
 
-    public DecisionNode(Func<bool> decision, Node trueNode, Node falseNode) {
+    public DecisionNode(Blackboard blackboard, Func<bool> decision, Node trueNode, Node falseNode) : base(blackboard) {
       this.decision = decision;
       this.trueNode = trueNode;
       this.falseNode = falseNode;

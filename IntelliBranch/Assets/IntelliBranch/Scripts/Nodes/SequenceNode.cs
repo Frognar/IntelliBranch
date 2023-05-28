@@ -5,7 +5,7 @@ namespace Frognar.IntelliBranch.Nodes {
   public class SequenceNode : Node {
     readonly IEnumerable<Node> nodes;
 
-    public SequenceNode(IEnumerable<Node> nodes) {
+    public SequenceNode(Blackboard blackboard, IEnumerable<Node> nodes) : base(blackboard) {
       this.nodes = nodes;
     }
 

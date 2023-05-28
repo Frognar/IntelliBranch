@@ -5,7 +5,7 @@ namespace Frognar.IntelliBranch.Nodes {
   public class SelectorNode : Node {
     readonly IEnumerable<Node> nodes;
 
-    public SelectorNode(IEnumerable<Node> nodes) {
+    public SelectorNode(Blackboard blackboard, IEnumerable<Node> nodes) : base(blackboard) {
       this.nodes = nodes;
     }
 

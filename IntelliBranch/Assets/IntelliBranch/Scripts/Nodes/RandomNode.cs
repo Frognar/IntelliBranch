@@ -7,7 +7,7 @@ namespace Frognar.IntelliBranch.Nodes {
     readonly List<Node> nodes;
     readonly Random random;
 
-    public RandomNode(IEnumerable<Node> nodes) {
+    public RandomNode(Blackboard blackboard, IEnumerable<Node> nodes) : base(blackboard) {
       this.nodes = nodes.ToList();
       random = new Random();
     }
